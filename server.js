@@ -31,9 +31,9 @@ app.post("/move", (req, res) => {
     res.send({ ok: true });
 });
 
-// 🔵 trả danh sách player
+// 🔵 trả danh sách Object.values player
 app.get("/players", (req, res) => {
-    res.json(players);
+    res.json(Object.values(players));
 });
 
 // ❌ player thoát
