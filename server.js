@@ -26,7 +26,13 @@ let players = {};
 app.post("/move", (req, res) => {
     const { id, x, y, z, rotY } = req.body;
 
-    players[id] = { x, y, z, rotY };
+    players[id] = {
+        id: id,   // 🔥 THÊM DÒNG NÀY
+        x: x,
+        y: y,
+        z: z,
+        rotY: rotY
+    };
 
     res.send({ ok: true });
 });
