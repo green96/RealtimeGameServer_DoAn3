@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 // 🔗 MongoDB connect
-mongoose.connect("mongodb+srv://khainhan19_db_user:gamedb123@gamedb.iulvp3w.mongodb.net/?appName=gameDB");
+mongoose.connect("mongodb+srv://<db_user_name>:<db_user_pass>@gamedb.iulvp3w.mongodb.net/?appName=gameDB");
 
 const PlayerSchema = new mongoose.Schema({
     id: String,
